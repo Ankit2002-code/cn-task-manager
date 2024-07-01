@@ -1,3 +1,7 @@
+## Screenshot Of Project
+![Screenshot 2024-07-01 214559](https://github.com/Ankit2002-code/cn-task-manager/assets/91961466/be80dbeb-b219-400a-9898-df043cd603c1)
+
+
 # Todo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
