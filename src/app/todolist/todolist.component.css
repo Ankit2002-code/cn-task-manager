@@ -1,0 +1,126 @@
+body{
+    background-color: #91bab3;
+}
+:host {
+    display: block;
+    background-color: #91bab3;
+    min-height: 100vh; /* Ensure the background covers the entire viewport height */
+  }
+  
+h1 {
+    text-align: center;
+    font-size: 85px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #b393d3;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #000,
+                 1px 2px 0px #000,
+                 1px 3px 0px #000,
+                 1px 4px 0px #957dad,
+                 1px 5px 0px #000,
+                 1px 6px 0px #000,
+                 1px 10px 5px rgba(16, 16, 16, 0.5),
+                 1px 15px 10px rgba(16, 16, 16, 0.4),
+                 1px 20px 30px rgba(16, 16, 16, 0.3),
+                 1px 25px 50px rgba(16, 16, 16, 0.2);
+  
+    /* font-size: 2rem; */
+    /* margin-top: 20px; */
+}
+
+#submitButton {
+    margin-top: 20px;
+    /* position: absolute; */
+    padding-bottom: 5px;
+    background-color: #004d00; /* Dark green color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 7px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 20px; /* Font size */
+
+}
+
+#myCheckbox {
+    margin-left: 30px;
+    transform: scale(2.5);
+    transform-origin: 0 0; 
+}
+
+#submitForm {
+    margin-top: 40px;
+    font-size:20px ;
+}
+
+#taskInTable {
+    max-width: 300px;
+    font-size: 20px;
+}
+
+#delete {
+    width: 80px;
+    font-size: 20px;
+}
+
+#edit {
+    width: 80px;
+    font-size: 20px;
+}
+
+#save {
+    width: 80px;
+    font-size: 20px;
+}
+
+.edit {
+    border: solid 2px orange;
+}
+
+.not-edit {
+    border: none;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+/* Position the button at the top right corner */
+.exportbutton {
+    position: absolute;
+    top: 20px; /* Distance from the top edge */
+    right: 20px; /* Distance from the right edge */
+    padding: 10px 20px; /* Button padding */
+    background-color: #004d00; /* Dark green color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 25%; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 22px; /* Font size */
+  }
+  
+  /* Add hover effect */
+  .exportbutton:hover {
+    background-color: #003300; /* Darker green on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+  .history-log {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .history-log h3 {
+    margin-top: 0;
+  }
+  
+  .history-log ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .history-log li {
+    margin: 5px 0;
+  }
+  
