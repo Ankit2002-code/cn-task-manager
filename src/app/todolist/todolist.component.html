@@ -1,4 +1,8 @@
 <body>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    </head>
     <div class="container">
     
         <h1>To-Do Application</h1>
@@ -13,16 +17,11 @@
             <button [disabled]="taskForm.invalid" id="submitButton" type="submit" class="btn btn-primary">Submit</button>
         </form>
         <button class ="exportbutton"(click)="exportToCSV()">Export to CSV</button>
-    
-    
-        <hr>
+         <hr>
         <div *ngFor="let task of taskArray; let i = index">
             <div>
               <span *ngIf="!task.isEditable">{{ task.taskName }}</span>
               <input *ngIf="task.isEditable" [(ngModel)]="task.taskName" (blur)="onSave(i, task.taskName)" />
-              <!-- <button *ngIf="!task.isEditable" (click)="onEdit(i)">Edit</button>
-              <button (click)="onDelete(i)">Delete</button>
-              <button (click)="onCheck(i)">{{ task.isCompleted ? 'Undo' : 'Complete' }}</button> -->
             </div>
             
             <div class="history-log">
@@ -36,11 +35,11 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Task</th>
-                    <th scope="col">Completed</th>
-                    <th scope="col">Delete</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Save</th>
+                    <th class="task" scope="col">Task</th>
+                    <th class="work" scope="col">Completed</th>
+                    <th class="work" scope="col">Delete</th>
+                    <th class="work" scope="col">Edit</th>
+                    <th class="work" scope="col">Save</th>
                 </tr>
             </thead>
             <tbody>
@@ -52,11 +51,11 @@
                             [readOnly]="!t.isEditable">
                     </td>
                     <td><input (change)="onCheck(i)" id="myCheckbox" type="checkbox"></td>
-                    <td><button id="delete" class="btn btn-danger btn-sm" (click)="onDelete(i)">Delete</button></td>
-                    <td><button id="edit" class="btn btn-primary btn-sm" (click)="onEdit(i)"
+                    <td><button id="delete"  (click)="onDelete(i)">Delete</button></td>
+                    <td><button id="edit"  (click)="onEdit(i)"
                             [disabled]="t.isEditable">Edit</button></td>
-                    <td><button id="save" class="btn btn-warning btn-sm" (click)="onSave(i, taskinput.value)"
-                            [disabled]="!t.isEditable">Save</button></td>
+                    <td><button id="save"  (click)="onSave(i, taskinput.value)"
+                            [disabled]="t.isEditable">Save</button></td>
                 </tr>
     
             </tbody>

@@ -46,9 +46,9 @@ export class TodolistComponent implements OnInit {
   }
 
   onCheck(index: number) {
+    this.taskArray[index].isCompleted = !this.taskArray[index].isCompleted;
     const status = this.taskArray[index].isCompleted ? 'completed' : 'not completed';
     this.addHistory(index, `Task marked as ${status}`);
-    this.taskArray[index].isCompleted = !this.taskArray[index].isCompleted;
   }
 
   onEdit(index: number) {
