@@ -1,5 +1,5 @@
 ## Screenshot Of Project
-![Screenshot 2024-07-01 214559](https://github.com/Ankit2002-code/cn-task-manager/assets/91961466/be80dbeb-b219-400a-9898-df043cd603c1)
+![image](https://github.com/Ankit2002-code/cn-task-manager/assets/91961466/66126420-a4c5-45c0-af8f-ed139137b1b5)
 
 
 # Todo
